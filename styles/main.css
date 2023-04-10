@@ -82,4 +82,11 @@ h6 {
   100% {
     visibility: hidden;
   }
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
 }/*# sourceMappingURL=main.css.map */

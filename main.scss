@@ -121,3 +121,11 @@ $tertiary: #99e2d0;
     visibility: hidden;
   }
 }
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
