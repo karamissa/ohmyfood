@@ -151,6 +151,8 @@ nav {
 // Jumbotron
 
 section {
+  background-color: $primary;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -164,8 +166,8 @@ section {
   }
 
   a {
-    background-color: $primary;
-    color: white;
+    background-color: white;
+    color: $primary;
     padding: 0.8rem;
     border-radius: 0.5rem;
   }
