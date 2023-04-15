@@ -150,7 +150,7 @@ nav {
 
 // Jumbotron
 
-section {
+section.company {
   background-color: $primary;
   color: white;
   display: flex;
@@ -170,5 +170,38 @@ section {
     color: $primary;
     padding: 0.8rem;
     border-radius: 0.5rem;
+  }
+}
+
+section.restaurants {
+  padding: 1rem;
+
+  .cards {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .card {
+    color: $primary;
+    border: 2px solid $primary;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img {
+    height: 250px;
+    overflow: hidden;
+  }
+
+  .card-text {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+
+    p {
+      font-size: 0.8rem;
+    }
   }
 }
