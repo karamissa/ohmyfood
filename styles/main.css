@@ -148,6 +148,10 @@ section.restaurants .card {
   border-radius: 4px;
   display: flex;
   flex-direction: column;
+  transition: box-shadow 200ms;
+}
+section.restaurants .card:hover {
+  box-shadow: 2px 2px #9356dc;
 }
 section.restaurants .img {
   max-height: 200px;

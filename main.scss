@@ -200,6 +200,11 @@ section.restaurants {
     border-radius: 4px;
     display: flex;
     flex-direction: column;
+    transition: box-shadow 200ms;
+
+    &:hover {
+      box-shadow: 2px 2px $primary;
+    }
   }
 
   .img {
