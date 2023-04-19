@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Shrikhand&display=swap');
 
+@import 'menu-page';
+
 //  CSS Reset
 
 // 1. Use a more-intuitive box-sizing model.
@@ -236,6 +238,11 @@ section.restaurants {
     max-height: 200px;
     overflow: hidden;
 
+    img {
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+    }
+
     span {
       position: absolute;
       top: 0.5rem;
@@ -313,5 +320,21 @@ footer {
   ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section.restaurants {
+    .cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  section.restaurants {
+    .cards {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
 }

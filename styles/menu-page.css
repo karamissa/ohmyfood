@@ -1,0 +1,18 @@
+.back-arrow {
+  height: 3rem;
+  width: 3rem;
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  border-radius: 50%;
+  transition: background-color 200ms;
+  padding: 0.5rem;
+}
+.back-arrow:hover {
+  background-color: rgb(220, 220, 220);
+}
+
+.menu-nav {
+  position: relative;
+  justify-content: center;
+}/*# sourceMappingURL=menu-page.css.map */
