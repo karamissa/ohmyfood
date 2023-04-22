@@ -148,3 +148,15 @@ main {
     }
   }
 }
+
+@media (min-width: 768px) {
+  .img {
+    max-height: 50vh;
+    overflow: hidden;
+  }
+
+  .menu-section {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -168,6 +168,16 @@ main .menu-section {
   background-color: #ff65d3;
 }
 
+@media (min-width: 768px) {
+  .img {
+    max-height: 50vh;
+    overflow: hidden;
+  }
+  .menu-section {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 *,
 *::before,
 *::after {
@@ -415,7 +425,7 @@ footer ul {
   grid-template-columns: repeat(2, 1fr);
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   section.restaurants .cards {
     grid-template-columns: repeat(2, 1fr);
   }
