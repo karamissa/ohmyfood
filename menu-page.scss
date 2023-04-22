@@ -17,3 +17,134 @@
   position: relative;
   justify-content: center;
 }
+
+main {
+  padding: 1rem;
+
+  .restaurant-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.5rem;
+    font-size: 1.1rem;
+    font-family: 'Shrikhand', cursive;
+    font-weight: 400;
+  }
+
+  .menu-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0.5rem;
+  }
+}
+
+.menu-part {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  .menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    border-radius: 4px;
+    padding: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 0.5rem;
+
+    h4 {
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: 0.8rem;
+    }
+
+    .price {
+      transition: padding 0.2s linear;
+      font-size: 0.8rem;
+    }
+
+    .choose-button {
+      position: absolute;
+      top: 0;
+      right: -4rem;
+      height: 100%;
+      background-color: $tertiary;
+      width: 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: right 0.2s linear;
+    }
+
+    .icon {
+      background-color: white;
+      border-radius: 50%;
+      height: 2rem;
+      width: 2rem;
+      padding: 0.5rem;
+    }
+
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 4px;
+
+      .price {
+        padding-right: 4rem;
+      }
+
+      .choose-button {
+        right: 0rem;
+      }
+    }
+
+    animation: menu-items 1s;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes menu-items {
+  0% {
+    opacity: 0.5;
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@for $i from 1 through 10 {
+  .menuItem:nth-child(0n + #{$i}) {
+    animation-delay: calc(calc($i * 1) - 1) + s;
+  }
+}
+
+.order-button {
+  padding: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    background-color: $secondary;
+    color: white;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    border: none;
+    transition: background-color 200ms;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #ff65d3;
+    }
+  }
+}

@@ -15,4 +15,16 @@
 .menu-nav {
   position: relative;
   justify-content: center;
+}
+
+.menu-section {
+  padding: 1rem;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  border: 1px solid gray;
+  padding: 0.5rem;
 }/*# sourceMappingURL=menu-page.css.map */
