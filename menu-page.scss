@@ -157,6 +157,12 @@ main {
 
   .menu-section {
     display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .menu-section {
     grid-template-columns: repeat(3, 1fr);
   }
 }
