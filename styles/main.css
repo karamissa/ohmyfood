@@ -56,20 +56,13 @@ main .menu-section {
   overflow: hidden;
   position: relative;
   margin-bottom: 0.5rem;
-  white-space: nowrap;
   animation: menu-items 1s;
   animation-fill-mode: forwards;
 }
 .menu-part .menu-item h4 {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
   font-size: 1rem;
 }
 .menu-part .menu-item p {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
   font-size: 0.8rem;
 }
 .menu-part .menu-item .price {
@@ -320,7 +313,7 @@ section.company a:hover {
   background-color: white;
 }
 
-section.location {
+div.location {
   background-color: #ff79da;
   padding: 1rem;
   display: flex;
@@ -328,13 +321,13 @@ section.location {
   justify-content: center;
   gap: 0.6rem;
 }
-section.location div {
+div.location div {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.2rem;
 }
-section.location img {
+div.location img {
   width: 1.2rem;
   height: 1.2rem;
 }
